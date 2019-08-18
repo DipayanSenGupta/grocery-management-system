@@ -12,5 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('grocery');
 });
+Route::resource('items','ItemController');
